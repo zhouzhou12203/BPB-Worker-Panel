@@ -9,7 +9,7 @@
 
 ## معرفی
 
-این پروژه توسعه‌ی یک پنل کاربری برای اتصال رایگان و امن از طریق پروتکل‌های VLESS، Trojan و Warp حتی در شرایط فیلتر شدن دامنه و مسدود بودن Warp روی اپراتور می‌باشد، 
+این پروژه توسعه‌ی یک پنل کاربری برای اسکریپت <a href="https://github.com/yonggekkk/Cloudflare-workers-pages-vless">پروکسی Cloudflare-workers/pages</a> ایجاد شده توسط <a href="https://github.com/yonggekkk">yonggekkk</a> می‌باشد.
 
 ### این پنل به دو روش راه‌اندازی می‌شود:
 
@@ -38,15 +38,9 @@
 </ol>
 <br><br>
 
-## محدودیت‌ها
-<br>
-<ol dir="rtl">
-<li><strong>اتصال UDP: </strong>پروتکل‌های VLESS و Trojan قابلیت اتصال صحیح UDP را نداشته و بخاطر همین تماس تصویری تلگرام و موارد حزیی دیکر کار نمیکند. به همین خاطر DNS های UDP هم کار نمیکند و در عوض DOH استفاده شده که امن‌تر هم هستند.</li>
-<li><strong>محدودیت تعداد درخواست: </strong>پروتکل‌های VLESS و Trojan برای استفاده 2-3 نغر کافی بوده و برای اتصال نامحدود باید از دامنه شخصی یا کانفیگ‌های Warp استفاده شود.</li>
-<br>
-
 ## نحوه‌ی راه‌اندازی، تنظیمات و استفاده
 - [روش جدید پیشنهادی نصب به صورت Pages](docs/pages_upload_installation_fa.md)
+- [نصب به صورت Pages](docs/pages_installation_fa.md)
 - [نصب به صورت Workers](docs/worker_installation_fa.md)
 - [نحوه استفاده از پنل](docs/configuration_fa.md)
 - [پرسش‌های متداول (FAQ)](docs/faq.md)
@@ -167,7 +161,7 @@
       <td>پسورد پروتکل Trojan</td>
     </tr>
     <tr>
-      <td><b>PROXY_IP</b></td>
+      <td><b>PROXYIP</b></td>
       <td>Proxy IP برای VLESS و Trojan</td>
     </tr>
     <tr>
@@ -194,6 +188,8 @@
 ---
 ### تشکر ویژه
 
-- نویسنده پروتکل‌های VLESS و Trojan <a href="https://github.com/yonggekkk/Cloudflare-workers-pages-vless">پروکسی Cloudflare-workers/pages</a>
 - نویسنده کد CF-vless <a href="https://github.com/3Kmfi6HP/EDtunnel">3Kmfi6HP</a>
 - نویسنده برنامه IP ترجیحی CF <a href="https://github.com/badafans/Cloudflare-IP-SpeedTest">badafans</a>، <a href="https://github.com/XIU2/CloudflareSpeedTest">XIU2</a>
+
+---
+برای آموزش جزئیات اسکریپت اصلی، لطفاً به <a href="https://ygkkk.blogspot.com/2023/07/cfworkers-vless.html">وبلاگ و آموزش‌های ویدیویی Yongge</a> مراجعه کنید.
